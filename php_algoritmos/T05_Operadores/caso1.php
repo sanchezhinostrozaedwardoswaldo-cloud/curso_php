@@ -19,18 +19,24 @@
     2.- ¿Cuanto se le deve pagar al empleado B en todo el año?
     3.- ¿Cuanto en total a pagado la empresa a sus empleados?*/
 
+    /*Declarar variables*/
     $A = 2500;
     $B = 3000;
     $meses = 12;
     $beneficioJulio = 350;
     $beneficioDiciembre = 350;
+
+    /*Calcular el bono total*/
     $beneficioExtra = $beneficioJulio + $beneficioDiciembre;
 
+    /*Calcular el total a pagar a cada empleado*/
     $totalA = ($A * $meses) + $beneficioExtra;
     $totalB = ($B * $meses) + $beneficioExtra;
 
+    /*Calcular el total pagado por la empresa*/
     $totalEmpleados = $totalA + $totalB;
 
+    /*Mostrar resultados*/
     echo "==============================================\n";
     echo "              REPORTE DE BOLETA ANUAL         \n";
     echo "==============================================\n";
